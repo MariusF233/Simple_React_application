@@ -1,3 +1,9 @@
+/*
+index.css este importat in index.js 
+va fi ca un css file global pentru toate componentele
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,58 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  /*
+  familia font importata mai sus 
+  */
+  color: #1f1e1e;
+}
+.navbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #bd1245;
+}
+.navbar .links {
+  margin-left: auto;
+  /*asta trimite linkurile la dreapta
+  parintele avand display:flex*/
+}
+.navbar a {
+  margin-left: 12px;
+  text-decoration: none;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 15px;
+}
+
+.blog-preview{
+  padding:12px 20px;
+  margin:25px 0;
+  border-bottom:1px solid #f4e0e0;
+}
+
+.blog-preview:hover{
+  box-shadow:2px 4px 6px rgba(28, 27, 27, 0.1);
+}
+
+.blog-preview h3{
+  font-size:21px;
+  color:#bd1245;
+  margin-bottom:6px;
 }

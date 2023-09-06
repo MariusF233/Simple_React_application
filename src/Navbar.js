@@ -4,6 +4,10 @@ cod,template JSX,similar unui cod html si apoi aceasta
 functie o exportam la finalul file
 
 
+
+la style={{}} pot adauga valori CSS in JSX
+primul set de {} spune ca folosesc un dynamic value
+al doilea set {} e pentru javascript object
 */
 //sfc+tab(imi da un arrow function fara params)
 
@@ -13,7 +17,12 @@ const Navbar = () => {
       <h1>Blogul meu</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a href="/create">Creaza un nou blog</a>
+        <a href="/create" style={{
+         color:"white",
+         backgroundColor:'#f1356d',
+         borderRadius:'12px'
+
+        }}>Creaza un nou blog</a>
        
       </div>
     </nav>
